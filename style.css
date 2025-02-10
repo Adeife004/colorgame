@@ -20,14 +20,15 @@ h1 {
 .container {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
+    width: 50%;
     justify-content: center;
+    justify-self: center;
 }
 
 .square {
     width: 30%;
     background: #800080;
-    padding-bottom: 30%;
+    padding-bottom: 25%;
     margin: 1.6%;
     transition: all 0.3s ease;
 }
@@ -66,16 +67,20 @@ button:hover {
     }
 
     .message {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     #colorDisplay {
         font-size: 20px;
     }
 
+    .container {
+        width: 90%;
+    }
+
     /* Make sure there are 3 squares per row */
     .square {
-        width: 30%; 
+        width: 100%; 
         margin: 1.6%;
     }
 
@@ -95,11 +100,15 @@ button:hover {
     }
 
     .message {
-        font-size: 15px;
+        font-size: 12px;
     }
 
     #colorDisplay {
         font-size: 30px;
+    }
+
+    .container {
+        width: 90%;
     }
 
     /* 3 squares per row on small screens */
@@ -114,5 +123,73 @@ button:hover {
 
     button {
         font-size: 0.8rem;
+    }
+
+    /* ✅ iPad Mini Portrait & Landscape */
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    .message {
+        font-size: 18px;
+    }
+
+    #colorDisplay {
+        font-size: 60px;
+    }
+
+    .container {
+        width: 70%;
+        max-width: 800px;
+        margin: auto;
+    }
+
+    .square {
+        width: 30%;
+        padding-bottom: 30%;
+        margin: 1%;
+    }
+
+    .menu-container {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
+}
+
+/* ✅ Mobile Responsiveness (General) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .message {
+        font-size: 12px;
+    }
+
+    #colorDisplay {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    /* Make sure there are 3 squares per row */
+    .square {
+        width: 30%;
+        margin: 1.6%;
+    }
+
+    .menu-container {
+        font-size: 16px;
+    }
+
+    button {
+        font-size: 0.9rem;
     }
 }
