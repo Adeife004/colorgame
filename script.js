@@ -82,7 +82,7 @@ function squareClick() {
         changeAllSquares(clickedColor);
         messageDisplay.textContent = "Correct!";
         h1.style.backgroundColor = clickedColor;
-        setTimeout(resetBtnFunc, 4000); // Reset the game after 4 seconds
+        setTimeout(resetBtnFunc, 3000); // Reset the game after 4 seconds
     } else {
         this.style.backgroundColor = "#232323";
         messageDisplay.textContent = "Try Again!";
