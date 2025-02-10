@@ -75,12 +75,14 @@ function setupSquares(numSquares) {
 }
 
 // Square click handler
+// Square click handler
 function squareClick() {
     let clickedColor = this.style.backgroundColor;
     if (clickedColor === winningColor) {
         changeAllSquares(clickedColor);
         messageDisplay.textContent = "Correct!";
         h1.style.backgroundColor = clickedColor;
+        setTimeout(resetBtnFunc, 4000); // Reset the game after 4 seconds
     } else {
         this.style.backgroundColor = "#232323";
         messageDisplay.textContent = "Try Again!";
